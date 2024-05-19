@@ -6,6 +6,7 @@
       <class name="Tests.HomePageTest">
         <methods>
           <include name="testOpenHomePage"/>
+          <include name="webDriverMethods"/>
         </methods>
       </class> <!-- Tests.HomePageTest -->
     </classes>
