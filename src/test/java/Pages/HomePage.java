@@ -1,24 +1,20 @@
 package Pages;
-import Methods.Methods;
-import staticvariables.StaticVariables;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.By;
 
-public class HomePage extends Methods {
+public class HomePage {
+    WebDriver driver;
 
-    By clickHomePageItem = By.className("card-up");
-
-    public HomePage(WebDriver driver, WebDriverWait wait, Actions actions) {
-        super(driver, wait, actions);
+    // Constructor to initialize the WebDriver
+    public HomePage(WebDriver driver) {
+        this.driver = driver;
     }
 
-    public void chooseHomePageMenu(String homeMenu) {
-        int indexOfElement = arrayListToInt(StaticVariables.HOME_MENU_ITEMS, homeMenu);
-        javaExecutorScrollIntoView(clickHomePageItem);
-        clickWithIndex(clickHomePageItem,indexOfElement);
+    // Open the browser with the specified URL
+    public void openHomePage(String url) {
+        driver.get(url);
     }
 
 }
