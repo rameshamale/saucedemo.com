@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import Pages.AlertsPage;
 import Pages.BrowserWindowPage;
 import Pages.HomePage;
+import Pages.windowHandlesPage;
 
 public class BaseTests {
 
@@ -19,6 +20,7 @@ public class BaseTests {
     public HomePage homepage;
     public BrowserWindowPage browserWindowPage;
     public AlertsPage alertpage;
+    public windowHandlesPage windowhandlepage ;
     public static final String URL = "https://demoqa.com/";
     public static final String URL1="";
     
@@ -41,8 +43,8 @@ public class BaseTests {
         waitTime();
         homepage=new HomePage(driver, wait, actions);
         browserWindowPage= new BrowserWindowPage(driver, wait, actions);
-        alertpage=new AlertsPage(driver, wait, actions);
-    
+        windowhandlepage=new windowHandlesPage(driver, wait, actions);
+        alertpage=new AlertsPage(driver, wait, actions); 
     
     }
 
