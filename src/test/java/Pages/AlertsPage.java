@@ -18,4 +18,17 @@ public class AlertsPage extends Methods  {
         super(driver,wait,actions);
     }
 	
+	public void clickAlertButton() {
+		javaExecutorScrollIntoView(alertButton);
+		element(alertButton).click();}
+	
+	public void clicktimerAlertButton() {
+		element(timerAlertButton).click();}
+	
+	public void clickconfirmButton() {
+		element(timerAlertButton).click();}
+	
+	public void clickpromtButton() {
+		element(timerAlertButton).click();}
+	
 }
