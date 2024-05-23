@@ -7,6 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import Methods.Methods;
 import Pages.AlertsPage;
 import Pages.BrowserWindowPage;
 import Pages.HomePage;
@@ -21,6 +22,7 @@ public class BaseTests {
     public BrowserWindowPage browserWindowPage;
     public AlertsPage alertpage;
     public windowHandlesPage windowhandlepage ;
+    public Methods methods;
     public static final String URL = "https://demoqa.com/";
     public static final String URL1="";
     
@@ -45,6 +47,7 @@ public class BaseTests {
         browserWindowPage= new BrowserWindowPage(driver, wait, actions);
         windowhandlepage=new windowHandlesPage(driver, wait, actions);
         alertpage=new AlertsPage(driver, wait, actions); 
+        methods=new Methods(driver, wait, actions);
     
     }
 

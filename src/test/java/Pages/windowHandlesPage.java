@@ -12,6 +12,8 @@ public class windowHandlesPage extends Methods {
 	By tabButton=By.id("tabButton");
 	By windowButton=By.id("windowButton");
 	By messageWindowButton=By.id("messageWindowButton");
+    By tabText = By.xpath("//h1[text()='This is a sample page']");
+
 	
 	public windowHandlesPage ( WebDriver driver, WebDriverWait wait, Actions actions){
         super(driver, wait, actions);
@@ -25,5 +27,8 @@ public class windowHandlesPage extends Methods {
 	public void clickmessageWindowButton() {
 		element(messageWindowButton).click();
 	}
+	public String getTabText() {
+		return getText(tabText);}
 	
+
 }
