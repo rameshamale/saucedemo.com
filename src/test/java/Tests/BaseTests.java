@@ -1,5 +1,7 @@
 package Tests;
 
+import java.util.Locale;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -7,9 +9,13 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
+import com.github.javafaker.Faker;
+
 import Pages.AlertsPage;
 import Pages.BrowserWindowPage;
+import Pages.ButtonsPage;
 import Pages.HomePage;
+import Pages.TextBox;
 
 public class BaseTests {
 
@@ -19,9 +25,13 @@ public class BaseTests {
     public HomePage homepage;
     public BrowserWindowPage browserWindowPage;
     public AlertsPage alertpage;
+    public TextBox textBoxPage;
+    public ButtonsPage buttonPage;
     public static final String URL = "https://demoqa.com/";
     public static final String URL1="";
     
+    public Faker ukFaker;
+    public Faker faker;
     
     public void waitTime() {
         try {
@@ -42,6 +52,10 @@ public class BaseTests {
         homepage=new HomePage(driver, wait, actions);
         browserWindowPage= new BrowserWindowPage(driver, wait, actions);
         alertpage=new AlertsPage(driver, wait, actions);
+        textBoxPage=new TextBox(driver, wait, actions); 
+        buttonPage= new ButtonsPage(driver, wait, actions);
+        ukFaker=new Faker(new Locale("en-GB"));
+        faker=new Faker();
     
     
     }
