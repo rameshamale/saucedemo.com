@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeMethod;
 import Pages.AlertsPage;
 import Pages.BrowserWindowPage;
 import Pages.HomePage;
+import Pages.NestedPage;
 
 public class BaseTests {
 
@@ -19,6 +20,7 @@ public class BaseTests {
     public HomePage homepage;
     public BrowserWindowPage browserWindowPage;
     public AlertsPage alertpage;
+    public NestedPage nestedPage;
     public static final String URL = "https://demoqa.com/";
     public static final String URL1="";
     
@@ -42,6 +44,7 @@ public class BaseTests {
         homepage=new HomePage(driver, wait, actions);
         browserWindowPage= new BrowserWindowPage(driver, wait, actions);
         alertpage=new AlertsPage(driver, wait, actions);
+        nestedPage=new NestedPage(driver, wait, actions);
     
     
     }
