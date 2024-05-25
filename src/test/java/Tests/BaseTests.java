@@ -9,6 +9,8 @@ import org.testng.annotations.BeforeMethod;
 
 import Pages.AlertsPage;
 import Pages.BrowserWindowPage;
+import Pages.ButtonsPage;
+import Pages.CheckBoxPage;
 import Pages.HomePage;
 
 public class BaseTests {
@@ -19,6 +21,8 @@ public class BaseTests {
     public HomePage homepage;
     public BrowserWindowPage browserWindowPage;
     public AlertsPage alertpage;
+    public CheckBoxPage checkBoxPage;
+    public ButtonsPage buttonsPage;
     public static final String URL = "https://demoqa.com/";
     public static final String URL1="";
     
@@ -42,7 +46,9 @@ public class BaseTests {
         homepage=new HomePage(driver, wait, actions);
         browserWindowPage= new BrowserWindowPage(driver, wait, actions);
         alertpage=new AlertsPage(driver, wait, actions);
-    
+        checkBoxPage=new CheckBoxPage(driver, wait, actions);
+        buttonsPage=new ButtonsPage(driver, wait, actions);
+        
     
     }
 
