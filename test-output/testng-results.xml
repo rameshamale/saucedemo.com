@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-05-29T08:13:11 IST" name="Default suite" finished-at="2024-05-29T08:13:55 IST" duration-ms="44068">
+  <suite started-at="2024-05-29T09:09:34 IST" name="Default suite" finished-at="2024-05-29T09:10:01 IST" duration-ms="26705">
     <groups>
     </groups>
-    <test started-at="2024-05-29T08:13:11 IST" name="Default test" finished-at="2024-05-29T08:13:55 IST" duration-ms="44068">
+    <test started-at="2024-05-29T09:09:34 IST" name="Default test" finished-at="2024-05-29T09:10:01 IST" duration-ms="26705">
       <class name="Tests.TextBoxTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.TextBoxTest@72e5a8e]" started-at="2024-05-29T08:13:11 IST" name="setup" finished-at="2024-05-29T08:13:38 IST" duration-ms="27241" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.TextBoxTest@273e7444]" started-at="2024-05-29T09:09:34 IST" name="setup" finished-at="2024-05-29T09:09:44 IST" duration-ms="9777" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="textBoxFakerTest()[pri:0, instance:Tests.TextBoxTest@72e5a8e]" started-at="2024-05-29T08:13:38 IST" name="textBoxFakerTest" finished-at="2024-05-29T08:13:50 IST" duration-ms="11573" status="PASS">
+        <test-method signature="textBoxFakerTest()[pri:0, instance:Tests.TextBoxTest@273e7444]" started-at="2024-05-29T09:09:44 IST" name="textBoxFakerTest" finished-at="2024-05-29T09:09:55 IST" duration-ms="11672" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- textBoxFakerTest -->
-        <test-method is-config="true" signature="tear_down()[pri:0, instance:Tests.TextBoxTest@72e5a8e]" started-at="2024-05-29T08:13:50 IST" name="tear_down" finished-at="2024-05-29T08:13:55 IST" duration-ms="5213" status="PASS">
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:Tests.TextBoxTest@273e7444]" started-at="2024-05-29T09:09:55 IST" name="tear_down" finished-at="2024-05-29T09:10:01 IST" duration-ms="5224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tear_down -->
