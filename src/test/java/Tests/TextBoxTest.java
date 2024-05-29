@@ -2,10 +2,13 @@ package Tests;
 
 import java.util.Locale;
 
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+git merge <branch-name>
 import Pages.ButtonsPage;
+
 
 public class TextBoxTest extends BaseTests {
     @Test
@@ -17,7 +20,7 @@ public class TextBoxTest extends BaseTests {
         String domain="@test.com";
 
         homepage.chooseHomePageMenu("Elements");
-        buttonPage.chooseElementsMenu("Text Box");;
+        buttonPage.chooseElementsMenu("Text Box");
         waitTime();
         textBoxPage.enterFullName(f1);
         textBoxPage.enterMail(eMail.toLowerCase(Locale.ROOT)+domain);
