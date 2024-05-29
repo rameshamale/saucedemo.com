@@ -18,7 +18,7 @@ public class TextBox extends Methods {
     By currentAddress = By.id("currentAddress");
     By permanentAddress = By.id("permanentAddress");
     By submit = By.id("submit");
-    By assertion = By.className("mb-1");
+    By assertion = By.xpath("//div[@class='mt-2 row']");
 	
 	public TextBox(WebDriver driver, WebDriverWait wait, Actions actions) {
 		super(driver, wait, actions);
