@@ -3,13 +3,23 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="Tests.TextBoxTest">
         <methods>
           <include name="textBoxFakerTest"/>
+=======
+      <class name="Tests.CheckBoxPageTest">
+        <methods>
+>>>>>>> checkbox
           <include name="tear_down"/>
+          <include name="testCheckBoxExpansion"/>
           <include name="setup"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- Tests.TextBoxTest -->
+=======
+      </class> <!-- Tests.CheckBoxPageTest -->
+>>>>>>> checkbox
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
