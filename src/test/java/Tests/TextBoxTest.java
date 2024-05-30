@@ -1,15 +1,7 @@
 package Tests;
-
-import java.util.Locale;
-
-
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
-git merge <branch-name>
 import Pages.ButtonsPage;
-
-
 public class TextBoxTest extends BaseTests {
     @Test
     public void textBoxFakerTest(){
@@ -20,10 +12,10 @@ public class TextBoxTest extends BaseTests {
         String domain="@test.com";
 
         homepage.chooseHomePageMenu("Elements");
-        buttonPage.chooseElementsMenu("Text Box");
+        buttonsPage.chooseElementsMenu("Text Box");
         waitTime();
         textBoxPage.enterFullName(f1);
-        textBoxPage.enterMail(eMail.toLowerCase(Locale.ROOT)+domain);
+        textBoxPage.enterMail(eMail);
         textBoxPage.enterCAddress(cAdd);
         textBoxPage.enterPAddress(pAdd);
         textBoxPage.clickSubmit();
