@@ -3,15 +3,6 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="Tests.ButtonsPageTest">
-        <methods>
-          <include name="buttonsTest"/>
-          <include name="tear_down"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- Tests.ButtonsPageTest -->
-=======
       <class name="Tests.TextBoxTest">
         <methods>
           <include name="textBoxFakerTest"/>
@@ -19,7 +10,6 @@
           <include name="setup"/>
         </methods>
       </class> <!-- Tests.TextBoxTest -->
->>>>>>> textbox
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
