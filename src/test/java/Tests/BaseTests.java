@@ -19,6 +19,7 @@ import Pages.CheckBoxPage;
 import Pages.HomePage;
 import Pages.ModalDialogsPage;
 import Pages.TextBox;
+import Pages.NestedPage;
 
 public class BaseTests {
 
@@ -28,6 +29,7 @@ public class BaseTests {
     public HomePage homepage;
     public BrowserWindowPage browserWindowPage;
     public AlertsPage alertpage;
+    public NestedPage nestedPage;
     public FrameHandlePage frameHandlePage;
     public TextBox textBoxPage;
     public CheckBoxPage checkBoxPage;
@@ -69,6 +71,9 @@ public class BaseTests {
 
         frameHandlePage=new FrameHandlePage(driver, wait, actions);
         modeldilogue=new ModalDialogsPage(driver, wait, actions);
+
+        nestedPage=new NestedPage(driver, wait, actions);
+
 
     }
 

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,15 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                    <span>C:\Users\dell\AppData\Local\Temp\testng-eclipse--978778061\testng-customsuite.xml</span>
-=======
-                    <span>C:\Users\dell\AppData\Local\Temp\testng-eclipse-2027766609\testng-customsuite.xml</span>
->>>>>>> checkbox
-=======
-                    <span>C:\Users\dell\AppData\Local\Temp\testng-eclipse-347682230\testng-customsuite.xml</span>
->>>>>>> modeldilogs
+                    <span>C:\Users\dell\AppData\Local\Temp\testng-eclipse-1139641460\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -100,11 +92,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-<<<<<<< HEAD
-                    <span class="method-stats">1 method,   1 passed</span>
-=======
-                    <span class="method-stats">2 methods,   2 passed</span>
->>>>>>> modeldilogs
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.NestedPageTest" class="method navigator-link" hash-for-method="nestedChildPagetest">nestedChildPagetest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -114,27 +116,10 @@
                     </span>
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
-<<<<<<< HEAD
-<<<<<<< HEAD
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Tests.TextBoxTest" class="method navigator-link" hash-for-method="textBoxFakerTest">textBoxFakerTest</a> <!-- method navigator-link -->
-=======
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Tests.CheckBoxPageTest" class="method navigator-link" hash-for-method="testCheckBoxExpansion">testCheckBoxExpansion</a> <!-- method navigator-link -->
->>>>>>> checkbox
+                        <a href="#" panel-name="suite-Default_suite" title="Tests.NestedPageTest" class="method navigator-link" hash-for-method="nestedParentPagetest">nestedParentPagetest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-=======
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Tests.ModeldiloguePageTest" class="method navigator-link" hash-for-method="largeModelTest">largeModelTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="Tests.ModeldiloguePageTest" class="method navigator-link" hash-for-method="smallModelTest">smallModelTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
->>>>>>> modeldilogs
                     </div> <!-- method-list-content passed suite-Default_suite -->
                   </li>
                 </ul>
@@ -147,37 +132,24 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-<<<<<<< HEAD
-<<<<<<< HEAD
               <img src="failed.png"/>
-              <span class="class-name">Tests.TextBoxTest</span>
-=======
-              <img src="passed.png"/>
-              <span class="class-name">Tests.CheckBoxPageTest</span>
->>>>>>> checkbox
-=======
-              <img src="passed.png"/>
-              <span class="class-name">Tests.ModeldiloguePageTest</span>
->>>>>>> modeldilogs
+              <span class="class-name">Tests.NestedPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-<<<<<<< HEAD
-<<<<<<< HEAD
-                  <a name="textBoxFakerTest">
-                  </a> <!-- textBoxFakerTest -->
-                  <span class="method-name">textBoxFakerTest</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Name:Keven Schaefer I] but found [Full Name]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at org.testng.Assert.assertEquals(Assert.java:666)
-	at Tests.TextBoxTest.textBoxFakerTest(TextBoxTest.java:24)
+                  <a name="nestedChildPagetest">
+                  </a> <!-- nestedChildPagetest -->
+                  <span class="method-name">nestedChildPagetest</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //p[normalize-space()=&apos;Child Iframe&apos;] (tried for 20 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at Methods.Methods.element(Methods.java:28)
+	at Methods.Methods.getText(Methods.java:65)
+	at Pages.NestedPage.switchToChildFrame(NestedPage.java:29)
+	at Tests.NestedPageTest.nestedChildPagetest(NestedPageTest.java:18)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -206,25 +178,50 @@
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[normalize-space()=&apos;Child Iframe&apos;]&quot;}
+  (Session info: chrome=125.0.6422.78)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-IS5NC7T&apos;, ip: &apos;192.168.29.20&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.10&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 125.0.6422.78, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\dell\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:63658}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 90c4748801727abccf80603d25f9545c
+*** Element info: {Using=xpath, value=//p[normalize-space()=&apos;Child Iframe&apos;]}
+	at jdk.internal.reflect.GeneratedConstructorAccessor10.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 32 more
 
 </div> <!-- stack-trace -->
-=======
-                  <a name="testCheckBoxExpansion">
-                  </a> <!-- testCheckBoxExpansion -->
-                  <span class="method-name">testCheckBoxExpansion</span>
->>>>>>> checkbox
-=======
-                  <a name="largeModelTest">
-                  </a> <!-- largeModelTest -->
-                  <span class="method-name">largeModelTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Tests.NestedPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="smallModelTest">
-                  </a> <!-- smallModelTest -->
-                  <span class="method-name">smallModelTest</span>
->>>>>>> modeldilogs
+                  <a name="nestedParentPagetest">
+                  </a> <!-- nestedParentPagetest -->
+                  <span class="method-name">nestedParentPagetest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -232,15 +229,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-<<<<<<< HEAD
-<<<<<<< HEAD
-            <span class="header-content">C:\Users\dell\AppData\Local\Temp\testng-eclipse--978778061\testng-customsuite.xml</span>
-=======
-            <span class="header-content">C:\Users\dell\AppData\Local\Temp\testng-eclipse-2027766609\testng-customsuite.xml</span>
->>>>>>> checkbox
-=======
-            <span class="header-content">C:\Users\dell\AppData\Local\Temp\testng-eclipse-347682230\testng-customsuite.xml</span>
->>>>>>> modeldilogs
+            <span class="header-content">C:\Users\dell\AppData\Local\Temp\testng-eclipse-1139641460\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -249,23 +238,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-<<<<<<< HEAD
-<<<<<<< HEAD
-      &lt;class name=&quot;Tests.TextBoxTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;textBoxFakerTest&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- Tests.TextBoxTest --&gt;
-=======
-      &lt;class name=&quot;Tests.CheckBoxPageTest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;testCheckBoxExpansion&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- Tests.CheckBoxPageTest --&gt;
->>>>>>> checkbox
-=======
-      &lt;class name=&quot;Tests.ModeldiloguePageTest&quot;/&gt;
->>>>>>> modeldilogs
+      &lt;class name=&quot;Tests.NestedPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -307,38 +280,18 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(2);
 data.setCell(0, 0, 0)
-<<<<<<< HEAD
-<<<<<<< HEAD
-data.setCell(0, 1, 'textBoxFakerTest')
-data.setCell(0, 2, 'Tests.TextBoxTest')
-data.setCell(0, 3, 12254);
-=======
-data.setCell(0, 1, 'testCheckBoxExpansion')
-data.setCell(0, 2, 'Tests.CheckBoxPageTest')
-data.setCell(0, 3, 1737);
->>>>>>> checkbox
-=======
-data.setCell(0, 1, 'largeModelTest')
-data.setCell(0, 2, 'Tests.ModeldiloguePageTest')
-data.setCell(0, 3, 1459);
+data.setCell(0, 1, 'nestedChildPagetest')
+data.setCell(0, 2, 'Tests.NestedPageTest')
+data.setCell(0, 3, 20908);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'smallModelTest')
-data.setCell(1, 2, 'Tests.ModeldiloguePageTest')
-data.setCell(1, 3, 1042);
->>>>>>> modeldilogs
+data.setCell(1, 1, 'nestedParentPagetest')
+data.setCell(1, 2, 'Tests.NestedPageTest')
+data.setCell(1, 3, 1609);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-<<<<<<< HEAD
-<<<<<<< HEAD
-              <span class="suite-total-time">Total running time: 12 seconds</span>
-=======
-              <span class="suite-total-time">Total running time: 1 seconds</span>
->>>>>>> checkbox
-=======
-              <span class="suite-total-time">Total running time: 2 seconds</span>
->>>>>>> modeldilogs
+              <span class="suite-total-time">Total running time: 22 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -364,58 +317,32 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-<<<<<<< HEAD
-<<<<<<< HEAD
-              <div class="chronological-class-name">Tests.TextBoxTest</div> <!-- chronological-class-name -->
-=======
-              <div class="chronological-class-name">Tests.CheckBoxPageTest</div> <!-- chronological-class-name -->
->>>>>>> checkbox
-=======
-              <div class="chronological-class-name">Tests.ModeldiloguePageTest</div> <!-- chronological-class-name -->
->>>>>>> modeldilogs
+              <div class="chronological-class-name">Tests.NestedPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-<<<<<<< HEAD
-<<<<<<< HEAD
                 <img src="failed.png">
                 </img>
-                <span class="method-name">textBoxFakerTest</span>
-                <span class="method-start">11900 ms</span>
+                <span class="method-name">nestedChildPagetest</span>
+                <span class="method-start">24835 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tear_down</span>
-                <span class="method-start">24158 ms</span>
-=======
-                <span class="method-name">testCheckBoxExpansion</span>
-                <span class="method-start">16679 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tear_down</span>
-                <span class="method-start">18426 ms</span>
->>>>>>> checkbox
-=======
-                <span class="method-name">largeModelTest</span>
-                <span class="method-start">10621 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tear_down</span>
-                <span class="method-start">12086 ms</span>
+                <span class="method-start">45753 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup</span>
-                <span class="method-start">17372 ms</span>
+                <span class="method-start">51010 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">smallModelTest</span>
-                <span class="method-start">32444 ms</span>
+                <span class="method-name">nestedParentPagetest</span>
+                <span class="method-start">105393 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tear_down</span>
-                <span class="method-start">33488 ms</span>
->>>>>>> modeldilogs
+                <span class="method-start">107004 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
