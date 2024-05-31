@@ -1,4 +1,5 @@
 package Tests;
+
 import java.util.Locale;
 
 import org.openqa.selenium.WebDriver;
@@ -12,6 +13,7 @@ import com.github.javafaker.Faker;
 
 import Pages.AlertsPage;
 import Pages.BrowserWindowPage;
+import Pages.FrameHandlePage;
 import Pages.ButtonsPage;
 import Pages.CheckBoxPage;
 import Pages.HomePage;
@@ -25,15 +27,17 @@ public class BaseTests {
     public HomePage homepage;
     public BrowserWindowPage browserWindowPage;
     public AlertsPage alertpage;
+    public FrameHandlePage frameHandlePage;
     public TextBox textBoxPage;
     public CheckBoxPage checkBoxPage;
-    public ButtonsPage buttonsPage; 
+    public ButtonsPage buttonsPage;
+    
     public static final String URL = "https://demoqa.com/";
     public static final String URL1="";
     
     public Faker ukFaker;
     public Faker faker;
-    
+
     public void waitTime() {
         try {
             Thread.sleep(5000);
@@ -53,15 +57,15 @@ public class BaseTests {
         homepage=new HomePage(driver, wait, actions);
         browserWindowPage= new BrowserWindowPage(driver, wait, actions);
         alertpage=new AlertsPage(driver, wait, actions);
-        textBoxPage=new TextBox(driver, wait, actions); 
-        buttonsPage=new ButtonsPage(driver, wait, actions);
+        textBoxPage=new TextBox(driver, wait, actions);
         ukFaker=new Faker(new Locale("en-GB"));
         faker=new Faker();
-   
-    
+
+
         checkBoxPage=new CheckBoxPage(driver, wait, actions);
         buttonsPage=new ButtonsPage(driver, wait, actions);
-        
+
+        frameHandlePage=new FrameHandlePage(driver, wait, actions);
     }
 
     @AfterMethod
