@@ -4,6 +4,7 @@
   <test thread-count="5" name="Default test(failed)">
     <classes>
 <<<<<<< HEAD
+<<<<<<< HEAD
       <class name="Tests.TextBoxTest">
         <methods>
           <include name="textBoxFakerTest"/>
@@ -11,15 +12,24 @@
       <class name="Tests.CheckBoxPageTest">
         <methods>
 >>>>>>> checkbox
+=======
+      <class name="Tests.ModeldiloguePageTest">
+        <methods>
+          <include name="smallModelTest"/>
+>>>>>>> modeldilogs
           <include name="tear_down"/>
           <include name="testCheckBoxExpansion"/>
           <include name="setup"/>
         </methods>
 <<<<<<< HEAD
+<<<<<<< HEAD
       </class> <!-- Tests.TextBoxTest -->
 =======
       </class> <!-- Tests.CheckBoxPageTest -->
 >>>>>>> checkbox
+=======
+      </class> <!-- Tests.ModeldiloguePageTest -->
+>>>>>>> modeldilogs
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

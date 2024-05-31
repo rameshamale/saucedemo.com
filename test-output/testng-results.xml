@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -85,6 +86,41 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- tear_down -->
       </class> <!-- Tests.CheckBoxPageTest -->
 >>>>>>> checkbox
+=======
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-25T17:07:41 IST" name="Default suite" finished-at="2024-05-25T17:08:20 IST" duration-ms="38931">
+    <groups>
+    </groups>
+    <test started-at="2024-05-25T17:07:41 IST" name="Default test" finished-at="2024-05-25T17:08:20 IST" duration-ms="38931">
+      <class name="Tests.ModeldiloguePageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.ModeldiloguePageTest@54e1c68b]" started-at="2024-05-25T17:07:41 IST" name="setup" finished-at="2024-05-25T17:07:51 IST" duration-ms="10618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="largeModelTest()[pri:0, instance:Tests.ModeldiloguePageTest@54e1c68b]" started-at="2024-05-25T17:07:51 IST" name="largeModelTest" finished-at="2024-05-25T17:07:53 IST" duration-ms="1459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- largeModelTest -->
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:Tests.ModeldiloguePageTest@54e1c68b]" started-at="2024-05-25T17:07:53 IST" name="tear_down" finished-at="2024-05-25T17:07:58 IST" duration-ms="5286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear_down -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.ModeldiloguePageTest@54e1c68b]" started-at="2024-05-25T17:07:58 IST" name="setup" finished-at="2024-05-25T17:08:13 IST" duration-ms="15072" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="smallModelTest()[pri:0, instance:Tests.ModeldiloguePageTest@54e1c68b]" started-at="2024-05-25T17:08:13 IST" name="smallModelTest" finished-at="2024-05-25T17:08:14 IST" duration-ms="1042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- smallModelTest -->
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:Tests.ModeldiloguePageTest@54e1c68b]" started-at="2024-05-25T17:08:14 IST" name="tear_down" finished-at="2024-05-25T17:08:20 IST" duration-ms="5398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear_down -->
+      </class> <!-- Tests.ModeldiloguePageTest -->
+>>>>>>> modeldilogs
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

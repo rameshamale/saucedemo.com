@@ -17,6 +17,7 @@ import Pages.FrameHandlePage;
 import Pages.ButtonsPage;
 import Pages.CheckBoxPage;
 import Pages.HomePage;
+import Pages.ModalDialogsPage;
 import Pages.TextBox;
 
 public class BaseTests {
@@ -31,7 +32,8 @@ public class BaseTests {
     public TextBox textBoxPage;
     public CheckBoxPage checkBoxPage;
     public ButtonsPage buttonsPage;
-    
+
+    public ModalDialogsPage modeldilogue;
     public static final String URL = "https://demoqa.com/";
     public static final String URL1="";
     
@@ -66,6 +68,8 @@ public class BaseTests {
         buttonsPage=new ButtonsPage(driver, wait, actions);
 
         frameHandlePage=new FrameHandlePage(driver, wait, actions);
+        modeldilogue=new ModalDialogsPage(driver, wait, actions);
+
     }
 
     @AfterMethod
