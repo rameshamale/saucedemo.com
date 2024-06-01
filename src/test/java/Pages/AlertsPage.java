@@ -9,7 +9,7 @@ import Methods.Methods;
 
 public class AlertsPage extends Methods  {
 	
-	By alertButton=By.id("alertButton");
+	By alertButton=By.id("");
 	By timerAlertButton=By.id("timerAlertButton");
 	By confirmButton=By.id("confirmButton");
 	By promtButton=By.id("promtButton");
