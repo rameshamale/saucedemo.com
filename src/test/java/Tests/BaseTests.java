@@ -11,15 +11,18 @@ import org.testng.annotations.BeforeMethod;
 
 import com.github.javafaker.Faker;
 
+import Methods.Methods;
 import Pages.AlertsPage;
 import Pages.BrowserWindowPage;
 import Pages.FrameHandlePage;
 import Pages.ButtonsPage;
 import Pages.CheckBoxPage;
+import Pages.ButtonsPage;
 import Pages.HomePage;
 import Pages.ModalDialogsPage;
 import Pages.TextBox;
 import Pages.NestedPage;
+import Pages.RadioButtonPage;
 
 public class BaseTests {
 
@@ -36,6 +39,9 @@ public class BaseTests {
     public ButtonsPage buttonsPage;
 
     public ModalDialogsPage modeldilogue;
+    public ButtonsPage buttonsPage;
+    public RadioButtonPage radioButtonPage;
+    public Methods methods;
     public static final String URL = "https://demoqa.com/";
     public static final String URL1="";
     
@@ -61,6 +67,10 @@ public class BaseTests {
         homepage=new HomePage(driver, wait, actions);
         browserWindowPage= new BrowserWindowPage(driver, wait, actions);
         alertpage=new AlertsPage(driver, wait, actions);
+        buttonsPage=new ButtonsPage(driver, wait, actions);
+        radioButtonPage=new RadioButtonPage(driver, wait, actions);
+        methods=new Methods(driver, wait, actions);
+    
         textBoxPage=new TextBox(driver, wait, actions);
         ukFaker=new Faker(new Locale("en-GB"));
         faker=new Faker();
