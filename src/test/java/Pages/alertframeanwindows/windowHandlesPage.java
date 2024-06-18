@@ -1,4 +1,4 @@
-package Pages;
+package Pages.alertframeanwindows;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -22,12 +22,15 @@ public class windowHandlesPage extends Methods {
 		javaExecutorScrollIntoView(tabButton);
 		element(tabButton).click();}
 	public void clickWindowButton() {
+		javaExecutorScrollIntoView(windowButton);
 		element(windowButton).click();
 	}
 	public void clickmessageWindowButton() {
+		javaExecutorScrollIntoView(messageWindowButton);
 		element(messageWindowButton).click();
 	}
 	public String getTabText() {
+		javaExecutorScrollIntoView(tabText);
 		return getText(tabText);}
 	
 

@@ -1,4 +1,4 @@
-package Pages;
+package Pages.elements;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -24,30 +24,37 @@ public class ButtonsPage extends Methods {
     }
 
     public void clickXAd() {
-        click(ad);
+    	javaExecutorScrollIntoView(ad);
+    	click(ad);
     }
 
     public void clickClickMeButton() {
-        click(clickMeButton);
+    	javaExecutorScrollIntoView(clickMeButton);
+    	click(clickMeButton);
     }
 
     public String responseClickMe() {
-        return getText(responseDynamicClick);
+    	javaExecutorScrollIntoView(responseDynamicClick);
+    	return getText(responseDynamicClick);
     }
 
     public void doubleClickMeButton() {
-        doubleClick(doubleClickMe);
+    	javaExecutorScrollIntoView(doubleClickMe);
+    	doubleClick(doubleClickMe);
     }
 
     public String doubleClickResponse() {
+    	javaExecutorScrollIntoView(getDoubleClickMeMessage);
         return getText(getDoubleClickMeMessage);
     }
 
     public void rightClickButton() {
-        rightClick(rightClick);
+    	javaExecutorScrollIntoView(rightClick);
+    	rightClick(rightClick);
     }
 
     public String getRightClickResponse() {
+    	javaExecutorScrollIntoView(rightClickResponse);
         return getText(rightClickResponse);
     }
 

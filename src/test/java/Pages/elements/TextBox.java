@@ -1,4 +1,4 @@
-package Pages;
+package Pages.elements;
 
 import org.apache.commons.lang3.ArrayUtils;
 import org.openqa.selenium.By;

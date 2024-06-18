@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-02T17:46:18 IST" name="Default suite" finished-at="2024-06-02T17:46:38 IST" duration-ms="20131">
+    <groups>
+    </groups>
+    <test started-at="2024-06-02T17:46:18 IST" name="Default test" finished-at="2024-06-02T17:46:38 IST" duration-ms="20131">
+      <class name="Tests.FrameHanldePageTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:Tests.FrameHanldePageTest@7db12bb6]" started-at="2024-06-02T17:46:18 IST" name="setup" finished-at="2024-06-02T17:46:30 IST" duration-ms="11470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="iframe1Test()[pri:0, instance:Tests.FrameHanldePageTest@7db12bb6]" started-at="2024-06-02T17:46:30 IST" name="iframe1Test" finished-at="2024-06-02T17:46:33 IST" duration-ms="3198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- iframe1Test -->
+        <test-method is-config="true" signature="tear_down()[pri:0, instance:Tests.FrameHanldePageTest@7db12bb6]" started-at="2024-06-02T17:46:33 IST" name="tear_down" finished-at="2024-06-02T17:46:38 IST" duration-ms="5396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tear_down -->
+      </class> <!-- Tests.FrameHanldePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

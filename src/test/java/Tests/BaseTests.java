@@ -12,19 +12,18 @@ import org.testng.annotations.BeforeMethod;
 import com.github.javafaker.Faker;
 
 import Methods.Methods;
-import Methods.Methods;
-import Pages.AlertsPage;
-import Pages.BrowserWindowPage;
-import Pages.FrameHandlePage;
-import Pages.ButtonsPage;
-import Pages.CheckBoxPage;
-import Pages.ButtonsPage;
+import Pages.alertframeanwindows.AlertsPage;
+import Pages.alertframeanwindows.BrowserWindowPage;
+import Pages.alertframeanwindows.FrameHandlePage;
+import Pages.elements.ButtonsPage;
+import Pages.elements.CheckBoxPage;
 import Pages.HomePage;
-import Pages.ModalDialogsPage;
-import Pages.TextBox;
-import Pages.NestedPage;
-import Pages.RadioButtonPage;
-import Pages.windowHandlesPage;
+import Pages.alertframeanwindows.ModalDialogsPage;
+import Pages.elements.TextBox;
+import Pages.elements.LinksPage;
+import Pages.alertframeanwindows.NestedPage;
+import Pages.elements.RadioButtonPage;
+import Pages.alertframeanwindows.windowHandlesPage;
 
 public class BaseTests {
 
@@ -33,7 +32,7 @@ public class BaseTests {
     public Actions actions;
     public HomePage homepage;
     public BrowserWindowPage browserWindowPage;
-    public AlertsPage alertpage;
+    public AlertsPage alertsPage;
     public NestedPage nestedPage;
     public FrameHandlePage frameHandlePage;
     public TextBox textBoxPage;
@@ -43,6 +42,7 @@ public class BaseTests {
     public RadioButtonPage radioButtonPage;
     public windowHandlesPage windowhandlepage ;
     public Methods methods;
+    public LinksPage linksPage;
     public static final String URL = "https://demoqa.com/";
     public static final String URL1="";
     
@@ -58,8 +58,21 @@ public class BaseTests {
 
     @BeforeMethod
     public void setup() {
-        System.setProperty("webdriver.chrome.driver", "C:\\ChromeDriver\\chromedriver-win64\\chromedriver.exe");
-        driver = new ChromeDriver();    
+    	
+        // Setup ChromeDriver
+        // WebDriverManager.chromedriver().setup();
+    	
+    	System.setProperty("webdriver.chrome.driver", "C:\\ChromeDriver\\chromedriver-win64\\chromedriver.exe");
+    	
+////        
+//        ChromeOptions options = new ChromeOptions();
+//        options.addArguments("--headless");
+//        options.addArguments("--disable-gpu");
+//        options.addArguments("--no-sandbox");
+
+        // Initialize WebDriver with ChromeOptions
+    	driver = new ChromeDriver();  
+        //driver = new ChromeDriver(options);    
         driver.navigate().to(URL);
         driver.manage().window().maximize();
         wait = new WebDriverWait(driver, 20);
@@ -67,27 +80,20 @@ public class BaseTests {
         waitTime();
         homepage=new HomePage(driver, wait, actions);
         browserWindowPage= new BrowserWindowPage(driver, wait, actions);
-        alertpage=new AlertsPage(driver, wait, actions);
+        alertsPage=new AlertsPage(driver, wait, actions);
         buttonsPage=new ButtonsPage(driver, wait, actions);
         radioButtonPage=new RadioButtonPage(driver, wait, actions);
         methods=new Methods(driver, wait, actions);
-    
         textBoxPage=new TextBox(driver, wait, actions);
         ukFaker=new Faker(new Locale("en-GB"));
         faker=new Faker();
-
-
         checkBoxPage=new CheckBoxPage(driver, wait, actions);
         buttonsPage=new ButtonsPage(driver, wait, actions);
-
         frameHandlePage=new FrameHandlePage(driver, wait, actions);
         modeldilogue=new ModalDialogsPage(driver, wait, actions);
-
         nestedPage=new NestedPage(driver, wait, actions);
-
-
         windowhandlepage=new windowHandlesPage(driver, wait, actions);
-        alertpage=new AlertsPage(driver, wait, actions);
+        linksPage=new LinksPage(driver, wait, actions);
         methods=new Methods(driver, wait, actions);
 
     }

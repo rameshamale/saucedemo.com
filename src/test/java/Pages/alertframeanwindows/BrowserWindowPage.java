@@ -1,4 +1,4 @@
-package Pages;
+package Pages.alertframeanwindows;
 
 import org.apache.commons.lang3.ArrayUtils;
 import org.openqa.selenium.By;
@@ -35,11 +35,12 @@ public class BrowserWindowPage extends Methods {
     	javaExecutorScrollIntoView(newWindow);
         click(newWindow);
     }
-    public String returnNewWindowTitle(){
+
+    public String returnNewWindowTitle() {
         return getText(title);
     }
 
-    public void clickNewMessage(){
+    public void clickNewMessage() {
         click(newWindowMessage);
     }
 }

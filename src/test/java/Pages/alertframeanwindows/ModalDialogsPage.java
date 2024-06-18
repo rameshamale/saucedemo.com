@@ -1,4 +1,4 @@
-package Pages;
+package Pages.alertframeanwindows;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -21,19 +21,23 @@ public class ModalDialogsPage extends Methods {
     }
 
     public void clickSmallModal(){
-        click(smallModalButton);
+    	javaExecutorScrollIntoView(smallModalButton);
+    	click(smallModalButton);
     }
     public void clickLargeModal(){
-        click(largeModalButton);
+    	javaExecutorScrollIntoView(largeModalButton);
+    	click(largeModalButton);
     }
-    public void clickCloseSmallModal()
-    {
+    public void clickCloseSmallModal() {
+    	javaExecutorScrollIntoView(closeSmallModal);
         click(closeSmallModal);
     }
     public String smallModalResponse(){
+    	javaExecutorScrollIntoView(smallResponse);
         return getText(smallResponse);
     }
     public String largeModalResponse(){
+    	javaExecutorScrollIntoView(largeResponse);
         return getText(largeResponse);
     }
     public void clickCloseLargeModal(){

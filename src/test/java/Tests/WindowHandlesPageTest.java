@@ -1,11 +1,8 @@
 package Tests;
 
 import java.util.ArrayList;
-import java.util.Set;
 
 import org.testng.annotations.Test;
-
-import Pages.windowHandlesPage;
 
 public class WindowHandlesPageTest extends BaseTests {
 	

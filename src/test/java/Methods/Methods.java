@@ -102,6 +102,13 @@ public class Methods {
         JavascriptExecutor executor = (JavascriptExecutor) driver;
         executor.executeScript("arguments[0].click();", element(locator));
     }
+    
+    public void scrollBy(int x, int y) {
+    	JavascriptExecutor jse = (JavascriptExecutor) driver; 
+    	jse.executeScript("window.scrollBy(arguments[0], arguments[1]);", x, y);
+    }
+    
+    
 
     public String getTitleName() {
         return getText(title);

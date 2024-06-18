@@ -1,4 +1,4 @@
-package Pages;
+package Pages.elements;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -10,7 +10,7 @@ import Methods.Methods;
 public class RadioButtonPage extends Methods {
 	
 	By yesButton=By.xpath("(//label[normalize-space()='Yes'])[1]");
-	By impressiveButton=By.xpath("(//label[normalize-space()='Impressive'])[1]");
+	By impressiveButton=By.xpath("(//label[@class='custom-control-label'])[2]");
 	By response=By.className("mt-3");
 	
     public RadioButtonPage(WebDriver driver, WebDriverWait wait, Actions actions) {
@@ -21,7 +21,8 @@ public class RadioButtonPage extends Methods {
     	click(yesButton);
     }
     public void clickOnImpressiveButton(){
-        click(impressiveButton);
+    	javaExecutorScrollIntoView(impressiveButton);
+    	click(impressiveButton);
     }
 
     public String responseRadioButton(){
